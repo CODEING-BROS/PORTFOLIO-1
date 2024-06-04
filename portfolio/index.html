@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>portfolio</title>
+</head>
+<body>
+    <div class="scroll-up-btn">       
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="home-content ">
+                <div class="text-1">Hello, my name is </div>
+                <div class="text-2">Deepak Tiwari</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <div class="btns">
+                    <a href="#" class="btn1">Hire me</a>
+                    <a href="#" class="btn2">Resume  <i class="fa fa-download"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="assets/pg1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+        <h2 class="title">About me</h2>
+        <div class="container">
+            <div class="about-content">
+                <div class="column left">
+                    <img src="assets/1.jpg" alt="">
+                </div>
+                <div class="column about-right">
+                    <div class="text">
+                        I'm Deepak and I'm a <span class="typing-2"></span>
+                    </div>
+                    <p>
+                        A seasoned full-stack web developer, proficient in C++, Java, and Python,
+                         I specialize in crafting comprehensive solutions tailored to clients' 
+                         needs. With expertise in both frontend and backend development, I ensure 
+                         seamless functionality across all layers of a website. Focused on intuitive 
+                         user interfaces and robust server-side applications,
+                         I deliver excellence by staying updated with emerging trends and providing innovative solutions
+                    </p>
+                        <!-- links -->
+                        <div class="links" id="links">
+                            <div class="toggle" onclick="toggleMenu()">
+                                <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                            </div>
+                            <ul>
+                                <li style="--clr:#1888f2;">
+                                    <a href="https://www.linkedin.com/in/dev-deepaktiwari/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li style="--clr:#333;">
+                                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </li>
+                                <li style="--clr:#E4405F;">
+                                    <a href="https://www.instagram.com/dev.deepak_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- services section start  -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-code"></i>
+                        <div class="text">Web Devlopment</div>
+                        <p>I create beautiful, responsive websites tailored to your needs. 
+                            From custom designs to e-commerce solutions and SEO optimization, 
+                            I help you build an engaging online presence that attracts and retains customers.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-mobile"></i>
+                        <div class="text">App Development</div>
+                        <p>
+                            I develop intuitive, user-friendly mobile apps for iOS and Android. 
+                            From concept to launch, I provide custom designs, seamless functionality, 
+                            and ongoing support to ensure your app stands out and engages users effectively.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-robot"></i>
+                        <div class="text">AI & ML</div>
+                       <p>
+                        I provide cutting-edge AI and ML solutions tailored to your needs. 
+                        From data analysis to predictive modeling and automation, I help businesses leverage
+                         advanced technologies to enhance decision-making, optimize processes, and drive innovation.
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="title">MY skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative <span class="typing-3"></span></div>
+                    <p>
+                        With expertise in custom software development, web and mobile app 
+                        creation, and AI-driven solutions, I blend creativity with technical prowess.
+                         My experience spans diverse industries, delivering innovative and efficient solutions.
+                          From designing intuitive user interfaces to optimizing backend code, my goal is to bring 
+                          your vision to life with precision and creativity
+                    </p>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>FRONTEND</span>
+                            <span>80%</span>
+                        </div> 
+                        <div class="line frontend"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>BACKEND</span>
+                            <span>70%</span>
+                        </div> 
+                        <div class="line backend"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>FULLSTACK</span>
+                            <span>70%</span>
+                        </div> 
+                        <div class="line fullstack"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CPP</span>
+                            <span>80%</span>
+                        </div> 
+                        <div class="line cpp"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PYTHON</span>
+                            <span>80%</span>
+                        </div> 
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JAVA</span>
+                            <span>70%</span>
+                        </div> 
+                        <div class="line java"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- projects section  -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="title">My projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="box">
+                        <img src="assets/amazon.png" alt="">
+                        <div class="text"><a href="#">Amazon clone</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="assets/spotify.png" alt="">
+                        <div class="text"><a href="#">Spotify clone</a></div>
+                    </div>
+                </div>    
+                    
+                <div class="card">
+                    <div class="box">
+                        <img src="assets/amazon.png" alt="">
+                        <div class="text"><a href="#">Amazon clone</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contact section -->
+    
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="title">Contact me</h2>
+                <div class="contact-content">
+                            <div class="column left">
+                                <div class="text">Get in Touch</div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid necessitatibus quis facere accusantium beatae esse architecto amet dolor repudiandae?</p>
+                                    <div class="icons">
+                                        <div class="row">
+                                            <i class="fas fa-user"></i>
+                                            <div class="info">
+                                                <div class="head">Name</div>
+                                                <div class="sub-title">Deepak Tiwari</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <i class="fas fa-envelope"></i>
+                                            <div class="info">
+                                                <div class="head">Email</div>
+                                                <div class="sub-title">deepakcoder2023@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <i class="fas fa-phone"></i> 
+                                            <div class="info">
+                                                <div class="head">Contact Number</div>
+                                                <div class="sub-title">+91 8941966505</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                        <div class="column right">
+                            <div class="text">Message me</div>
+                            <form action="#">
+                                <div class="fields">
+                                    <div class="field name">
+                                        <input type="text" placeholder="Name" required>
+                                    </div>
+                                    <div class="field email">
+                                        <input type="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                    <div class="field">
+                                        <input type="text" placeholder="Subject" required>
+                                    </div>
+                                    <div class="field textarea">
+                                        <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
+                                    </div>
+                                    <div class="button">
+                                        <button type="submit">Send messsage</button>
+                                    </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+<hr>
+        <!-- footet section starts -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Created by  <a href="#">Deepak Tiwari</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</p>
+            </div>
+            <div class="social-icons-container">
+                <ul>
+                    <li style="--clr:#1888f2;">
+                        <a href="www.linkedin.com/in/dev-deepaktiwari/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li style="--clr:#333;">
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li style="--clr:#E4405F;">
+                        <a href="https://www.instagram.com/dev.deepak_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li style="--clr:#1DA1F2;">
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li style="--clr:#000;">
+                        <a href="https://www.threads.net/" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    
+<script src="app.js"></script>
+</body>
+</html>
