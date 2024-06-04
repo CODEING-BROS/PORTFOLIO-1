@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:"Poppins" ;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -12,7 +11,6 @@ a{
 
 html, body {
     width: 100%;
-    font-family: "Montserrat";
     height: 100%;
     scroll-behavior: smooth;
 }
@@ -22,6 +20,7 @@ html, body {
     padding: 15px 0;
     margin: auto;
 }
+
 
 /* Styling the nav bar */
 nav {
@@ -487,8 +486,6 @@ section .title::after{
 }
 
 
-
-
 /* about section */
 
 .about .title::after{
@@ -718,7 +715,7 @@ section .title::after{
         padding-bottom: 80px;
     }
 
-    .about .title{
+    section .title{
         font-size: 50px;
         font-weight: 700;
         margin-bottom: 40px;
@@ -757,6 +754,13 @@ section .title::after{
 
 }
 
+
+@media(max-width:390px){
+    .about .about-content .left img{
+        height: 300px;
+        width: 300px;
+    }
+}
 
 /* services section styling */
 .services .title::after
@@ -847,22 +851,6 @@ section .title::after{
 }
 
 @media(max-width:550px){
-
-    .services .container .title{
-        font-size: 50px;
-        font-weight: 700;
-    }
-
-    .services .title::before{
-        
-        width: 300px;
-        height: 4px;
-    }
-    .services .title::after{
-        padding: 3px;
-        font-size: 20px;
-        bottom: -10px;
-    }
 
     .services .serv-content .card
     {
@@ -1137,21 +1125,6 @@ section .title::after{
 
 @media(max-width:500px){
 
-    .skills .title,
-    .contact .title{
-        font-size:55px;
-    }
-    .skills .title::before{
-        height: 3px;
-        width: 260px;
-        bottom: 10px;
-    }
-    .skills .title::after{
-        font-size: 20px;
-        bottom: -4px;
-        padding: 3px;
-    }
-
     .skills .skills-content .left .text,
     .contact .contact-content .left .text{
         font-size: 18x;
@@ -1269,14 +1242,14 @@ section .title::after{
         height: 150px;
     }
     
-    .projects h2.title{
+    section h2.title{
         font-size: 40px;
     }
 
     section .title::after{
         font-size: 15px;
     }
-    .services .title::after{
+    section .title::after{
         font-size: 15px;
     }
 }
@@ -1397,26 +1370,6 @@ section .title::after{
 }
 
 /* responsive */
-@media(max-width:500px)
-{
-    .contact .title{
-        font-size: 50px;
-    }
-    .contact .title::before{
-        height: 3px;
-        width: 320px;
-        bottom: 10px;
-    }
-
-    
-
-    .contact .title::after{
-        font-size: 20px;
-        bottom: -4px;
-        padding: 3px;
-    }
-}
-
 
 /* footer section */
 
@@ -1492,5 +1445,79 @@ footer li:hover
     }
     footer li a{
         font-size: 1.7rem;
+    }
+}
+
+
+@media(max-width:500px){
+    .services .title::after{
+        font-size: 20px;
+    }
+    .services .title::before{
+        width: 250px;
+    }
+    .contact .title::before{
+        width: 280px;
+    }
+}
+
+
+@media(max-width:400px){
+    .skills .title,
+    .contact .title,
+    .services .title,
+    #projects .title
+    {
+        font-size: 40px;
+    }
+
+    .skills .title::after,
+    .contact .title::after, 
+    .services .title::after,
+    #projects .title::after {
+        font-size: 15px;
+        padding: 5px;
+        bottom: -16%;
+    }
+
+    .skills .title::before,
+    .contact .title::before,
+    .services .title::before,
+    #projects .title::before {
+        width: 200px;
+        height: 4px;
+    }
+}
+@media(max-width:340px){
+
+    .about .about-content .left img{
+        height: 200px;
+        width: 200px;
+    }
+
+
+    .skills .title,
+    .contact .title,
+    .services .title,
+    #projects .title
+    {
+        font-size: 35px;
+    }
+
+    .skills .title::after,
+    .contact .title::after, 
+    .services .title::after,
+    #projects .title::after {
+        font-size: 12px;
+        padding: 5px;
+        bottom: -12%;
+    }
+
+    .skills .title::before,
+    .contact .title::before,
+    .services .title::before,
+    #projects .title::before {
+        width: 200px;
+        height: 4px;
     }
 }
