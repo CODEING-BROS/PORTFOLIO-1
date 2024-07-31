@@ -1156,18 +1156,18 @@ section .title::after{
     justify-content: center;
 }
 
-.live,.insta-video{
+.live,.video{
     background-color: #E5E5E5;
-    padding: 9px;
+    padding: 6px 18px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 22px;
     border-radius: 10px;
     color: #3d434f;
     border: #3d434f solid 4px;
     transition: all 0.3s ease-in-out;
 }
 
-.live:hover,.insta-video:hover{
+.live:hover,.video:hover{
     background-color: #FCA311;
     border: #E5E5E5 solid 4px;
     color: #E5E5E5;
