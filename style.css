@@ -440,6 +440,8 @@ nav .container {
 
 @media(max-width:380px)
 {
+
+
     .btns a{
         font-size: 20px;
         padding: 15px 20px;
@@ -1147,8 +1149,33 @@ section .title::after{
     content: "what i made";
 }
 
+#btns{
+    display: flex; 
+    padding: 10px 15px;
+    gap: 280px;
+    justify-content: center;
+}
+
+.live,.insta-video{
+    background-color: #E5E5E5;
+    padding: 9px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #3d434f;
+    border: #3d434f solid 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.live:hover,.insta-video:hover{
+    background-color: #FCA311;
+    border: #E5E5E5 solid 4px;
+    color: #E5E5E5;
+}
+
 .projects .card-container{
-    display: flex;
+    display: grid;
+    overflow: hidden;
     transition: all 0.5s ease-in-out;
     justify-content: center;
 }
@@ -1158,10 +1185,10 @@ section .title::after{
 }
 
 .projects .card img{
-    height: 300px;
+    height: 400px;
     margin-bottom: 15px;
     object-fit: cover;
-    width: 300px;
+    width: 1100px;
     border-radius: 10px;
     border: 2px solid #FCA311;
 }
@@ -1218,6 +1245,10 @@ section .title::after{
     }
 }
 @media(max-width:670px){
+    #btns{
+        width: 400px;
+        gap: 250px;
+    }
     .projects .card img{
         object-fit: contain;
         width: 400px;
@@ -1225,7 +1256,13 @@ section .title::after{
     }
 }
 
-@media(max-width:550px){
+@media(max-width:560px){
+
+    #btns{
+        width: 300px;
+        gap: 190px;
+    }
+
     .projects .card img{
         object-fit: contain;
         width: 350px;
@@ -1241,6 +1278,14 @@ section .title::after{
         width: 250px;
         height: 150px;
     }
+    #btns{
+        width: 250px;
+        gap: 80px;
+    }
+
+    .card .text{
+        font-size: 15px;
+    }
     
     section h2.title{
         font-size: 40px;
@@ -1253,6 +1298,8 @@ section .title::after{
         font-size: 15px;
     }
 }
+
+
 
 
 /* contact styling */
@@ -1450,6 +1497,11 @@ footer li:hover
 
 
 @media(max-width:500px){
+    #btns{
+        display: flex; 
+        padding: 10px 15px;
+        justify-content: space-between;
+    }
     .services .title::after{
         font-size: 20px;
     }
@@ -1463,6 +1515,14 @@ footer li:hover
 
 
 @media(max-width:400px){
+
+
+    #btns{
+        display: flex; 
+        padding: 10px 15px;
+        justify-content: space-between;
+    }
+
     .skills .title,
     .contact .title,
     .services .title,
@@ -1519,5 +1579,16 @@ footer li:hover
     #projects .title::before {
         width: 200px;
         height: 4px;
+    }
+}
+
+@media(max-width:350px){
+    #btns{
+        width: 250px;
+        gap: 80px;
+    }
+
+    .projects .card .box .text {
+        font-size: 15px;
     }
 }
